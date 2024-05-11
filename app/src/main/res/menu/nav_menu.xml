@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:title="Ajouter">
+        <menu>
+            <item
+                android:id="@+id/nav_nouveau"
+                android:title="Nouveau"/>
+            <item
+                android:id="@+id/nav_modifier1"
+                android:title="Modifier"/>
+            <item
+                android:id="@+id/nav_supprimer"
+                android:title="Supprimer"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Notes">
+        <menu>
+            <item
+                android:id="@+id/nav_saisir"
+                android:title="Saisir"/>
+            <item
+                android:id="@+id/nav_modifier2"
+                android:title="Modifier"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Affichage">
+        <menu>
+            <item
+                android:id="@+id/nav_par_module"
+                android:title="Par Module"/>
+            <item
+                android:id="@+id/nav_Delibiration"
+                android:title="Delibiration">
+                <menu>
+                    <item
+                        android:title="Semester1"/>
+                    <item
+                        android:title="Annuelle"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Log Out"
+        />
+</menu>

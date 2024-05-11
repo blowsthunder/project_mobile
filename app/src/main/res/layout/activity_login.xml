@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:padding="16dp"
+    android:background="@color/myback"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textSize="25dp">
+    </TextView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/login">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/personalemail">
+
+        </ImageView>
+        <EditText
+            android:id="@+id/email"
+            android:background="@color/white"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Email adress"
+            android:paddingLeft="10dp"
+            >
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/password">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/password"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Password">
+        </EditText>
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/erreur"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/err"
+        android:visibility="gone"
+        >
+    </TextView>
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:text="Se Connecter"
+        app:cornerRadius="0dp"
+        android:textColor="@color/myback"
+        android:backgroundTint="@color/white"
+        >
+
+    </Button>
+    <TextView
+        android:id="@+id/inscription"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="S'Inscrire?"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        >
+    </TextView>
+
+
+</LinearLayout>
